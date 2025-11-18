@@ -1,0 +1,318 @@
+* {
+   margin: 0px;
+   /* savi eliment ka bahar ka gap hata diya h  */
+   padding: 0px;
+   box-sizing: border-box;
+   /* border or padding ko height/width ke andar gina jayega */
+}
+
+.container {
+   display: flex;
+   /* container ko flex box bna diya h display flex */
+
+   justify-content: center;
+   /* horizontally  ko bich me liya diya h  */
+
+   align-items: center;
+   /* container ko center yani bich me la diya h  */
+
+   width: 100vw;
+   /* container ka (width pura screen pe h ) */
+
+   height: 100vh;
+   /* container ka (height pura screen pe h ) */
+
+   background-image: url('../img.jpg');
+   /* background img lgaya gya h  */
+
+   background-size: cover;
+   /* img ko pura tarah se taiyar kr diya h  */
+}
+
+.loginpage {
+   display: flex;
+   flex-direction: column;
+   /* sare item upar se niche rakhega */
+
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   width: 50%;
+   height: 70%;
+   background-color: #86868652;
+
+   border-radius: 30px;
+   /* kone ko gola kar bana dega */
+
+   backdrop-filter: blur(1px);
+   /* background halka blur kiya gya h  */
+}
+
+.logindetails {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.password {
+   /* font-family: 'poppins', sans-serif; */
+   font-size: 20px;
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
+}
+
+h1 {
+   font-family: 'lato', sans-serif;
+   font-size: 70px;
+   font-weight: 700;
+}
+
+input[type="email"],
+input[type="password"] {
+   padding: 20px;
+   border: none;
+   border-radius: 10px;
+   font-size: 20px;
+   font-family: 'playpen sans', cursive;
+}
+
+input[type="checkbox"] {
+   width: 30px;
+   height: 20px;
+   cursor: pointer;
+}
+
+button {
+   font-family: 'oswald', sans-serif;
+   cursor: pointer;
+   font-size: 20px;
+   padding: 20px 40px;
+   border: none;
+   border-radius: 10px;
+   background:linear-gradient(257deg,rgba(255, 248, 192, 0.615), pink)
+}
+
+p {
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+
+/* mobile devices */
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+   .container {
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      background-position: center;
+   }
+
+   .loginpage {
+      gap: 18px;
+      width: 70%;
+      height: 90%;
+   }
+
+   h1 {
+      font-family: 'lato', sans-serif;
+      font-size: 58px;
+      font-weight: 700;
+   }
+
+   .logindetails {
+      width: 88%;
+      gap: 10px;
+   }
+
+   input[type="email"],
+   input[type="password"] {
+      padding: 15px;
+      font-size: 16px;
+
+   }
+
+   .password {
+      font-size: 15px;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px
+   }
+      button {
+    font-family: 'oswald', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(257deg,rgba(255, 248, 192, 0.615), pink);
+      }  
+   }
+
+/* tablets and ipads */
+
+@media screen and (min-width :481px) and (max-width :768px) {
+   .container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+}
+  .loginpage {
+    gap: 20px;
+    width: 85%;
+    height: 90%;
+}
+  h1 {
+    font-family: 'lato', sans-serif;
+    font-size: 55px;
+     font-weight: 700;
+  }
+    .logindetails {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="email"],
+ input[type="password"] {
+    padding: 15px;
+    font-size: 20px;
+}
+  .password {
+    font-family: 'poppins', sans-serif;
+    font-size: 17px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+button {
+    font-family: 'oswald', sans-serif;
+    cursor: pointer;
+    font-size: 21px;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(257deg,rgba(255, 248, 192, 0.615), pink);
+}
+  
+}
+
+   /* small screens*/
+
+   @media screen and (min-width : 769px) and (max-width : 1024px) {
+      .container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+}
+.loginpage {
+    gap: 20px;
+    width: 80%;
+    height: 85%;  
+}
+ .logindetails {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ h1 {
+    font-family: 'lato', sans-serif;
+    font-size: 62px;
+    font-weight: 700;
+}
+   .logindetails {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type="email"],
+ input[type="password"] {
+    padding: 18px;
+    font-size: 21px;
+}
+.password {
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    width: 60%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+button {
+    font-family: 'oswald', sans-serif;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(257deg,rgba(255, 248, 192, 0.615), pink);
+}
+   }
+
+
+   /* large screen*/
+
+   @media screen and (min-width :1024px) and (max-width : 1200px) {
+       .container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+}
+.loginpage {
+    gap: 24px;
+    width: 90%;
+    height: 95%;  
+}
+ h1 {
+    font-family: 'lato', sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+}
+   .logindetails {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type="email"],
+ input[type="password"] {
+    padding: 20px;
+    font-size: 25px;
+}
+.password {
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+button {
+    font-family: 'oswald', sans-serif;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 21px 42px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(257deg,rgba(255, 248, 192, 0.615), pink);
+}
+
+   }
